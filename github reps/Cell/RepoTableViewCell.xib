@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="uLT-gc-Wa0" customClass="RepoTableViewCell" customModule="github_reps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uLT-gc-Wa0" id="xPM-PV-Acw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqU-Ya-5V1">
+                        <rect key="frame" x="16" y="37" width="327" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1r-ZX-Zt3">
+                        <rect key="frame" x="16" y="8" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y1r-ZX-Zt3" firstAttribute="top" secondItem="xPM-PV-Acw" secondAttribute="top" constant="8" id="G6W-X9-Q56"/>
+                    <constraint firstItem="Y1r-ZX-Zt3" firstAttribute="leading" secondItem="xPM-PV-Acw" secondAttribute="leading" constant="16" id="Ttj-Vh-jGT"/>
+                    <constraint firstItem="mqU-Ya-5V1" firstAttribute="top" secondItem="Y1r-ZX-Zt3" secondAttribute="bottom" constant="8" id="XfN-lI-OLC"/>
+                    <constraint firstItem="mqU-Ya-5V1" firstAttribute="leading" secondItem="xPM-PV-Acw" secondAttribute="leadingMargin" id="cMY-PP-vJK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mqU-Ya-5V1" secondAttribute="bottom" constant="11" id="eoh-50-oPB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mqU-Ya-5V1" secondAttribute="trailing" constant="16" id="mhx-SI-2Nn"/>
+                    <constraint firstAttribute="trailing" secondItem="Y1r-ZX-Zt3" secondAttribute="trailing" constant="16" id="pvY-h7-zBr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="Y1r-ZX-Zt3" id="qxc-fP-vQj"/>
+                <outlet property="starCountLabel" destination="mqU-Ya-5V1" id="NJb-d7-pAq"/>
+            </connections>
+            <point key="canvasLocation" x="221.59999999999999" y="70.164917541229386"/>
+        </tableViewCell>
+    </objects>
+</document>
